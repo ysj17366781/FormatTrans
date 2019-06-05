@@ -8,6 +8,8 @@ FormatTransDlg::FormatTransDlg(QWidget *parent, Qt::WFlags flags)
 
 	ui.cmbDataType->addItem("二字节整形(12)", QVariant("CInt16By12Factory"));
 	ui.cmbDataType->addItem("二字节整形(21)", QVariant("CInt16By21Factory"));
+	ui.cmbDataType->addItem("二字节无符号整形(12)", QVariant("CUInt16By12Factory"));
+	ui.cmbDataType->addItem("二字节无符号整形(21)", QVariant("CUInt16By21Factory"));
 
 	ObjectFactory::registerClass<CInt16By12Factory>();
 	ObjectFactory::registerClass<CInt16By21Factory>();
